@@ -1,0 +1,25 @@
+.lr-title{
+    color: #4474ae;
+    font-weight: 700;
+
+}
+input{
+    outline: none;
+   border: none;
+   border-bottom: 2px solid #4474ae;
+
+   padding: 4px 30px;
+}
+.login-register-btn{
+    color: white;
+    font-weight: 600;
+    background-color: #4474ae;
+    padding: 8px 28px;
+    border-radius: 6px;
+    transition: .3s;
+}
+.login-register-btn:hover{
+    background-color: white;
+    color: #4474ae;
+    border: 2px solid #4474ae;
+}

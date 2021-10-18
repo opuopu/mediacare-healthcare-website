@@ -1,0 +1,16 @@
+.login-main{
+    margin-top: 70px;
+}
+.google-btn{
+    border: 2px solid  #4474ae;
+    padding: 6px 6px;
+    color: #4474ae;
+    font-weight: 600;
+    transition: .2s;
+
+}
+.google-btn:hover{
+    background-color: #4474aed3;
+    border: 2px solid white;
+    color: white;
+}
