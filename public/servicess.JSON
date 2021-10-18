@@ -1,0 +1,40 @@
+[
+
+    {
+        "img":"https://i.postimg.cc/wMvFmtJ2/detal.png",
+        "id":"1",
+        "name":"DENTIST",
+        "desc":"For your child whitest teeths and your teeths problem Search Los Angeles Dentists, Information from Trusted Internet Sources. Quick Answers."
+    },
+
+    {
+        "img":"https://i.postimg.cc/VLtVwV9k/cradi-png.png",
+        "id":"2",
+        "name":"CARDIOLOGIST",
+        "desc":"Cardiology focuses on the diagnosis and treatment of the cardiovascular system - heart, arteries contact with us, and veins."
+    },
+    {
+        "img":"https://i.postimg.cc/g07VnYmF/crei-png.png",
+        "id":"3",
+        "name":"CHIROPRACTOR",
+        "desc":"Neck or back pain?Chiropractic is a healthcare profession that cares for a patient's neuromusculoskeletal system."
+    },
+    {
+        "img":"https://i.postimg.cc/v8t4KQkY/cdr-png.png",
+        "id":"4",
+        "name":"PEDIATRICIAN",
+        "desc":"Oral problems? dont worry contact with us.A pediatrician is a medical doctor who manages the physical, behavioral, and mental care for children"
+    },
+    {
+        "img":"https://i.postimg.cc/NMSvJrtJ/ser-g.png",
+        "id":"5",
+        "name":"SERGICAL",
+        "desc":"we have most talented doctors for that.our hospitals procedure- or intervention-based, or supports surgical specialties"
+    },
+    {
+        "img":"https://i.postimg.cc/bJ2BvVXg/mental-png.png",
+        "id":"6",
+        "name":"MENTAL HEALTH",
+        "desc":"we have good doctors for that reason. Need help dealing with a drug addiction in Bangladesh? Anatta Recovery provides confidential."
+    }
+]
