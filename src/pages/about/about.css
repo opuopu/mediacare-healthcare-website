@@ -1,0 +1,17 @@
+.about-btns{
+    background-color: #4474ae;
+    color: white;
+    border: #4474ae;
+    padding: 12px 26px;
+    border-radius: 24px;
+    font-weight: 600;
+    transition: .3s;
+
+}
+.about-btns:hover{
+    background-color: white;
+    color: #4474ae;
+    border: 1px solid #4474ae;
+    transition: .4s;
+    
+}

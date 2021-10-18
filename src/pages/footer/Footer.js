@@ -35,9 +35,9 @@ const Footer = () => {
                     <div className="footer-last row mt-5 pb-3">
                         <p className=" text-white col-md-6">Copyright © 2021 Medicare | Powered by Risegraph</p>
                         <div className="d-flex col-md-6 justify-content-end ">
-                        <p className="mx-3"><i class="fab fa-facebook"></i> </p>
+                        <p className="mx-3"><i className="fab fa-facebook"></i> </p>
                         <p><i class="fab fa-twitter"></i></p>
-                        <p className=" mx-3"><i class="fab fa-youtube"></i></p>
+                        <p className=" mx-3"><i className="fab fa-youtube"></i></p>
 
                         </div>
                     </div>
