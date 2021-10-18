@@ -4,6 +4,7 @@ import Header from './pages/header/Header';
 import { BrowserRouter,Switch,Route } from 'react-router-dom';
 import Home from './pages/home/Home';
 import Carousels from './pages/home/carousel/Carousel';
+import Footer from './pages/footer/Footer';
 
 function App() {
   return (
@@ -14,10 +15,15 @@ function App() {
       <Switch>
   
     
-  <Route path="/">
+  <Route exact path="/">
 <Home></Home>
   </Route>
+  <Route path="/home">
+<Home></Home>
+  </Route>
+  
       </Switch>
+      <Footer></Footer>
       </BrowserRouter>
 </div>
   
