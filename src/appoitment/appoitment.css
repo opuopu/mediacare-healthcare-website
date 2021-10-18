@@ -1,0 +1,31 @@
+.appoitment{
+    background-color: #4397ab;
+}
+.appo-btn{
+    border: 1px solid #4474ae;
+    padding: 12px 26px;
+    border-radius: 24px;
+    color: #4474ae;
+    font-weight: 600;
+    transition: .3s;
+    
+}
+.appo-btn:hover{
+    color: white;
+    background-color: #4474ae;
+    border: 1px solid #4474ae;
+}
+.specialist-title{
+    color: #4474ae;
+    font-weight: 700;
+    margin-top: 10px;
+    padding-bottom: 4px;
+    border-bottom: 3px solid #4474ae;
+    width: 50%;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    text-align: center;
+}
+.appoitment-main{
+    margin-top: 72px;
+}

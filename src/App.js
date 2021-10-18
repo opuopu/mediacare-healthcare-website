@@ -6,6 +6,7 @@ import Home from './pages/home/Home';
 import Carousels from './pages/home/carousel/Carousel';
 import Footer from './pages/footer/Footer';
 import About from './pages/about/About';
+import Appoitment from './appoitment/Appoitment';
 
 function App() {
   return (
@@ -25,6 +26,9 @@ function App() {
   </Route>
   <Route path="/about">
 <About></About>
+  </Route>
+  <Route path="/appoitment">
+<Appoitment></Appoitment>
   </Route>
   <Route path ="*">
   

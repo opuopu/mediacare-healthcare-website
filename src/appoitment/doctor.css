@@ -1,0 +1,13 @@
+.appoit-btn{
+   padding: 8px 16px;
+   color: #4474ae;
+   border: 1px solid #4474ae;
+   border-radius: 24px;
+   transition: .3s;
+   font-weight: 600;
+}
+.appoit-btn:hover{
+    color: white;
+    background-color: #4474ae;
+    border: 1px solid #4474ae;
+}

@@ -16,7 +16,7 @@ const Home = () => {
     const sliced = services.slice(0,3)
     console.log(sliced);
     return (
-        <div>
+        <div className="home-main">
          <Carousels></Carousels>
 
          <Container>

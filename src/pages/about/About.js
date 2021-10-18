@@ -11,7 +11,7 @@ import './about.css'
 
 const About = () => {
     return (
-        <div className="my-5">
+        <div className="main-about">
           <Container>
               <div className="row align-items-center">
                   <div className="col-md-6">
