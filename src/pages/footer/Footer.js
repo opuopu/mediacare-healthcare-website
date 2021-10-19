@@ -15,7 +15,7 @@ const Footer = () => {
 <h1 className="footer-t fw-bold text-white mb-4">Medicare</h1>
 <p> medicare in the United States is provided by many distinct organizations, made up of insurance companies, healthcare providers, hospital systems</p>
 <Link to ="/appoitment">
-             <button className="enroll-btn apoitnment-btn"> <i class="far fa-calendar-check"></i>  Appoitment now</button>
+             <button className="enroll-btn apoitnment-btn"> <i className="far fa-calendar-check"></i>  Appoitment now</button>
              </Link>
                     </div>
                     <div className="col-md-3">
@@ -36,7 +36,7 @@ const Footer = () => {
                         <p className=" text-white col-md-6">Copyright © 2021 Medicare | Powered by Risegraph</p>
                         <div className="d-flex col-md-6 justify-content-end ">
                         <p className="mx-3"><i className="fab fa-facebook"></i> </p>
-                        <p><i class="fab fa-twitter"></i></p>
+                        <p><i className="fab fa-twitter"></i></p>
                         <p className=" mx-3"><i className="fab fa-youtube"></i></p>
 
                         </div>

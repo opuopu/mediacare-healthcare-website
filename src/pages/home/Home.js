@@ -9,7 +9,7 @@ import './home.css'
 const Home = () => {
     const [services,setservices] = useState([])
    useEffect(()=>{
-       fetch('./servicess.JSON')
+       fetch('/servicess.JSON')
        .then(res =>res.json())
        .then(data =>setservices(data))
    },[])
