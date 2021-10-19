@@ -80,23 +80,9 @@ return signInWithPopup(auth,provider)
         // setloading(true)
     }
     }
-    // signin user
-    const signinuser = ()=>{
-        setloading(true)
-
-signInWithEmailAndPassword(auth,email,password)
-.then(result=>{
-    const user =result.user
-    setuser(user)
-    seterror('sign in successfull')
-   
-})
-.catch(error=>{
-    seterror("sorry email and password not match")
-})
-.finally(()=>setloading(false))
-
-    }
+ 
+//  
+//
    
     // signout
     const logout = () =>{
@@ -112,6 +98,6 @@ seterror("an error")
     }
 
    
-    return {user,googlesign,logout,loading,createuser,error,signinuser,setname,setemail,setpassword,seterror,setloading}
+    return {user,googlesign,logout,loading,createuser,error,auth,email,password,setname,setemail,setuser,setpassword,seterror,setloading}
 }
 export default Fireuse

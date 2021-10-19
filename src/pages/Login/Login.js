@@ -7,13 +7,14 @@ import Useauth from '../../context/useauth';
 import { Link } from 'react-router-dom';
 import { IconName,FcGoogle } from "react-icons/fc";
 import {useLocation,useHistory } from 'react-router-dom'
+import { signInWithEmailAndPassword } from '@firebase/auth';
 
 const Login = () => {
     const location = useLocation()
     const history = useHistory()
     const redirect_url = location.state?.from || '/home'
     const redirecturl = location.state?.from || '/home'
-    const {user,googlesign,signinuser,setemail,setpassword,seterror,setloading} = Useauth()
+    const {user,googlesign,setemail,setpassword,seterror,setuser,setloading,email,password,auth} = Useauth()
     console.log(user);
  
 
@@ -24,18 +25,23 @@ const handlelogin = () =>{
         history.push(redirect_url)
     })
 }
-// redirect email and password
-// const emailSignin =() =>{
-//     signinuser()
-//     .then(result=>{
-//         history.push(redirecturl)
-  
-//     })
-//     // .catch(error=>{
-//     //     seterror("sorry email and password not match")
-//     // })
-//     // .finally(()=>setloading(false))
-// }
+const signinuser = ()=>{
+    setloading(true)
+
+signInWithEmailAndPassword(auth,email,password)
+.then(result=>{
+const user =result.user
+setuser(user)
+seterror('sign in successfull')
+history.push(redirect_url)
+
+})
+.catch(error=>{
+seterror("sorry email and password not match")
+})
+.finally(()=>setloading(false))
+
+}
 
 
     const handleemail = (e) =>{
