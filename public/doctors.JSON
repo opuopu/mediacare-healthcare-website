@@ -1,49 +1,49 @@
 [
     {
-        "img":"http://webdemo2.risegraph.net/wp-content/uploads/2021/03/healthcare-medicine-and-hospital-treatment-concept-CV8GSGA.jpg",
-        "name": "Dr. Khasviware",
+        "img":"https://i.postimg.cc/x1JPhp12/healthcare-medicine-and-hospital-treatment-concept-CV8-GSGA.jpg",
+        "name": "Dr.symon taku",
         "spe":"dentist specialist",
         "key":"1"
     },
     {
-        "img":"http://webdemo2.risegraph.net/wp-content/uploads/2021/03/hospital-healthcare-workers-covid-19-treatment-con-M2ASHZ6.jpg",
-        "name": "Dr.Elemantariano",
+        "img":"https://i.postimg.cc/RCgyz846/hospital-healthcare-workers-covid-19-treatment-con-M2-ASHZ6.jpg",
+        "name": "Dr.Emon khan",
         "spe":"surgical specialist" ,
         "key":"2"
     },
     {
-        "img":"http://webdemo2.risegraph.net/wp-content/uploads/2021/03/covid19-coronavirus-healthcare-and-doctors-concept-T8SKTR4.jpg",
-        "name": "Dr. tuhin ahmed",
+        "img":"https://i.postimg.cc/HsfSY1Kx/covid19-coronavirus-healthcare-and-doctors-concept-T8-SKTR4.jpg",
+        "name": "Dr. afsana sneha",
         "spe":"mental health specialist",
         "key":"3"
     },
     {
-        "img":"http://webdemo2.risegraph.net/wp-content/uploads/2021/03/healthcare-workers-prevent-virus-insurance-and-med-BH4ZMHN.jpg",
-        "name": "Dr. lamia hasan",
+        "img":"https://i.postimg.cc/7P5dw96K/healthcare-workers-prevent-virus-insurance-and-med-BH4-ZMHN.jpg",
+        "name": "Dr. retina retu",
         "spe":" chiropractort specialist" ,
         "key":"4"
     },
     {
-        "img":"http://webdemo2.risegraph.net/wp-content/uploads/2021/03/healthcare-workers-coronavirus-covid-19-pandemic-a-T6F7TPE-1.jpg",
+        "img":"https://i.postimg.cc/cCWn9T5d/healthcare-workers-coronavirus-covid-19-pandemic-a-T6-F7-TPE-1.jpg",
         "name": "Dr. atif kumar",
         "spe":" pediatrician specialist" ,
         "key":"5"
     },
     {
-        "img":"http://webdemo2.risegraph.net/wp-content/uploads/2021/03/healthcare-workers-covid-19-coronavirus-and-preven-ZLTGEQM.jpg",
+        "img":"https://i.postimg.cc/L6N1DtkM/healthcare-workers-covid-19-coronavirus-and-preven-ZLTGEQM.jpg",
         "name": "Dr. arnob mahmud",
         "spe":" dental specialist" ,
         "key":"6"
     },
     {
-        "img":"http://webdemo2.risegraph.net/wp-content/uploads/2021/03/doctor-working-at-hospital-9AGKBN4.jpg",
-        "name": "Dr. opu mahmud",
+        "img":"https://i.postimg.cc/h40z4L57/doctor-working-at-hospital-9-AGKBN4.jpg",
+        "name": "Dr. mimi",
         "spe":" sergical specialist" ,
         "key":"7"
     },
     {
-        "img":"http://webdemo2.risegraph.net/wp-content/uploads/2021/03/hospital-healthcare-workers-covid-19-treatment-con-M2ASHZ6.jpg",
-        "name": "Dr. siyam miya",
+        "img":"https://i.postimg.cc/RCgyz846/hospital-healthcare-workers-covid-19-treatment-con-M2-ASHZ6.jpg",
+        "name": "Dr. siyam khan",
         "spe":" children specialist" ,
         "key":"8"
     }
