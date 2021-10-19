@@ -4,3 +4,12 @@ border: 3px solid #4474ae;
 font-weight: 600;
 color: white;
 }
+
+@media only  screen and (max-width:660px) {
+    .cr-title {
+      margin-top: 100px;
+    }
+.cr-detail{
+   visibility: hidden;
+}
+}

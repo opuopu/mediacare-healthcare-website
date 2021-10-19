@@ -9,7 +9,7 @@ import './home.css'
 const Home = () => {
     const [services,setservices] = useState([])
    useEffect(()=>{
-       fetch('/servicess.JSON')
+       fetch('/servicess.json')
        .then(res =>res.json())
        .then(data =>setservices(data))
    },[])
@@ -62,7 +62,7 @@ const Home = () => {
     <h1 className="fw-bold">about medicare</h1>
     <p className="texts">But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth. .</p>
     <Link to ="/about">
-             <button className="enroll-btn apoitnment-btn"> <i class="far fa-calendar-check"></i> <span className="ms-2">about us</span></button>
+             <button className="enroll-btn apoitnment-btn"> <i className="far fa-calendar-check"></i> <span className="ms-2">about us</span></button>
              </Link>
 </div>
 

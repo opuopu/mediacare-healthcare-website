@@ -12,7 +12,7 @@ const Details = () => {
     const [abouts,setabouts] = useState({})
 
     useEffect(()=>{
-        fetch('/servicess.JSON')
+        fetch('/servicess.json')
         .then(res=>res.json())
         .then(data=>setdetails(data))
     },[id])

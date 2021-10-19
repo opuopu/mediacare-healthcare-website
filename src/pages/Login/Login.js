@@ -12,7 +12,8 @@ const Login = () => {
     const location = useLocation()
     const history = useHistory()
     const redirect_url = location.state?.from || '/home'
-    const {user,googlesign,signinuser,setemail,setpassword} = Useauth()
+    const redirecturl = location.state?.from || '/home'
+    const {user,googlesign,signinuser,setemail,setpassword,seterror,setloading} = Useauth()
     console.log(user);
  
 
@@ -24,6 +25,17 @@ const handlelogin = () =>{
     })
 }
 // redirect email and password
+// const emailSignin =() =>{
+//     signinuser()
+//     .then(result=>{
+//         history.push(redirecturl)
+  
+//     })
+//     // .catch(error=>{
+//     //     seterror("sorry email and password not match")
+//     // })
+//     // .finally(()=>setloading(false))
+// }
 
 
     const handleemail = (e) =>{

@@ -7,7 +7,7 @@ import { IconName,FcAdvance } from "react-icons/fc";
 const Appoitment = () => {
 const[doctors,setDoctors] = useState([])
 useEffect(()=>{
-    fetch('/doctors.JSON')
+    fetch('/doctors.json')
     .then(res=>res.json())
     .then(data=>setDoctors(data))
 },[])

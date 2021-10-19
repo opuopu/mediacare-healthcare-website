@@ -22,7 +22,7 @@ const Carousels = () => {
       
       <h3 className="fw-bold">The trusted and friendly medical professionals</h3>
   
-      <p>We are committed to provide affordable services, without any compromise on the quality of service – so that you are able to remain happy.</p>
+      
       <Link to ="/appoitment">
              <button className="enroll-btn apoitnment-btn"> <i className="far fa-calendar-check"></i>      Appoitment now</button>
              </Link>
@@ -35,9 +35,9 @@ const Carousels = () => {
       alt="Third slide"
     />
 
-    <Carousel.Caption>
-      <h3 className="fw-bold">THE RIGHT PEDIATRICIAN</h3>
-      <p>We at MediCare are always fully focused on helping your child and you to overcame any hurdle or any other problem.</p>
+    <Carousel.Caption className="cr-title">
+      <h3 className="fw-bold">THE RIGHT PEDIATRICIAN TO REMAIN HAPPY</h3>
+     
       <Link to ="/appoitment">
              <button className="enroll-btn apoitnment-btn"> <i className="far fa-calendar-check"></i> Appoitment now</button>
              </Link>

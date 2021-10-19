@@ -76,15 +76,15 @@ return signInWithPopup(auth,provider)
       
     }
     else{
-        seterror('please use a valid password ')
+        seterror('password must be at least 8 chr.up,low and symbol')
         // setloading(true)
     }
     }
     // signin user
-    const signinuser = (email,password)=>{
+    const signinuser = ()=>{
         setloading(true)
 
-  signInWithEmailAndPassword(auth,email,password)
+signInWithEmailAndPassword(auth,email,password)
 .then(result=>{
     const user =result.user
     setuser(user)
@@ -112,6 +112,6 @@ seterror("an error")
     }
 
    
-    return {user,googlesign,logout,loading,createuser,error,signinuser,setname,setemail,setpassword}
+    return {user,googlesign,logout,loading,createuser,error,signinuser,setname,setemail,setpassword,seterror,setloading}
 }
 export default Fireuse
