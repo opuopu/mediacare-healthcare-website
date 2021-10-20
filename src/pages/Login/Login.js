@@ -14,7 +14,7 @@ const Login = () => {
     const history = useHistory()
     const redirect_url = location.state?.from || '/home'
     const redirecturl = location.state?.from || '/home'
-    const {user,googlesign,setemail,setpassword,seterror,setuser,setloading,email,password,auth} = Useauth()
+    const {user,googlesign,setemail,setpassword,seterror,setuser,setloading,email,password,auth,emainAndPassSign} = Useauth()
  
  
 
@@ -26,14 +26,13 @@ const handlelogin = () =>{
     })
 }
 const signinuser = ()=>{
-    setloading(true)
+  emainAndPassSign()
 
-signInWithEmailAndPassword(auth,email,password)
 .then(result=>{
 const user =result.user
 setuser(user)
-seterror('sign in successfull')
 history.push(redirect_url)
+
 
 })
 .catch(error=>{

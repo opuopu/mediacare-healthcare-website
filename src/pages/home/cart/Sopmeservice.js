@@ -13,7 +13,7 @@ const Sopmeservice = (props) => {
               <p className ="details">{desc}</p>
      
             <div className="d-flex justify-content-between align-items-center mt-2">
-            <Link to ={`/service/${id}`}>
+            <Link to ={`/about/${id}`}>
              <button className="enroll-btn"><i className="fas fa-layer-group"></i> <span className="ms-1"> read more</span></button>
              </Link>
             </div>

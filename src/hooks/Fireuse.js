@@ -61,7 +61,7 @@ return signInWithPopup(auth,provider)
     
         let passvalid =  /^(?=.*[0-9])(?=.*[!@#$%^&*])[a-zA-Z0-9!@#$%^&*]{7,15}$/;
         if(passvalid.test(password)){
-    createUserWithEmailAndPassword(auth,email,password)
+ createUserWithEmailAndPassword(auth,email,password)
         .then(result=>{
             const user =result.user
             setuser(user)
@@ -82,8 +82,12 @@ return signInWithPopup(auth,provider)
     }
     }
  
-//  
-//
+//  sign in user with email and password
+
+const emainAndPassSign = () =>{
+ return (  signInWithEmailAndPassword(auth,email,password))
+
+}
    
     // signout
     const logout = () =>{
@@ -99,6 +103,6 @@ seterror("an error")
     }
 
    
-    return {user,googlesign,logout,loading,createuser,error,auth,email,password,setname,setemail,setuser,setpassword,seterror,setloading}
+    return {user,googlesign,logout,loading,createuser,error,auth,email,password,setname,setemail,setuser,setpassword,seterror,setloading,emainAndPassSign,username}
 }
 export default Fireuse

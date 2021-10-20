@@ -9,9 +9,10 @@ import { Link } from 'react-router-dom';
 import { Container } from 'react-bootstrap';
 
 import './register.css'
+import {useLocation,useHistory } from 'react-router-dom'
 
 const Register = () => {
-   
+   const history = useHistory()
 
   
  
@@ -19,7 +20,7 @@ const Register = () => {
     
  
 
-    // redirect
+    // redirect 
     
 
     
@@ -34,6 +35,9 @@ const Register = () => {
 setname(e.target.value)
 
     }
+
+    
+   
 
        
     
