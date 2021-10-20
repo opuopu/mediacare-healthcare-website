@@ -43,6 +43,30 @@ doctors.map(doctor=> <Doctors key={doctor.key} doctor={doctor}></Doctors>)
      }
  </div>
             </Container>
+      
+             <h5 className="text-info fw-bold ms-2">our overview</h5>
+      
+            <div className="appoitment-last">
+              <Container>
+            
+              <div className="d-flex align-items-center justify-content-around flex-column flex-lg-row">
+                    <div className="">
+                        <h2 className="ap-title">350+</h2>
+                        <p className="ap-desc">specialist doctor</p>
+                    </div>
+                    <div className="">
+                        <h2 className="ap-title">
+                            1250+
+                        </h2>
+                        <p className="ap-desc">high quality sits</p>
+                    </div>
+                    <div className="">
+                    <h2 className="ap-title">50+</h2>
+                    <p className="ap-desc">ambulance</p>
+                    </div>
+                </div>
+              </Container>
+            </div>
         </div>
     );
 };

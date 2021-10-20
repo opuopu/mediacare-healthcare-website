@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom';
 import './carousel.css'
 
 const Carousels = () => {
-    console.log("done");
+   
     return (
         <div>
             <Carousel>

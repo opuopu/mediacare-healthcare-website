@@ -5,6 +5,7 @@ import Carousels from './carousel/Carousel';
 import Sopmeservice from './cart/Sopmeservice';
 import imgs from '../../image/info-block-5.webp'
 import './home.css'
+import { IconName,FcAdvance } from "react-icons/fc";
 
 const Home = () => {
     const [services,setservices] = useState([])
@@ -13,13 +14,14 @@ const Home = () => {
        .then(res =>res.json())
        .then(data =>setservices(data))
    },[])
-    const sliced = services.slice(0,3)
-    console.log(sliced);
+    
+   
     return (
         <div className="home-main">
          <Carousels></Carousels>
 
          <Container>
+         <h1 className="testimonials-title text-center"> <FcAdvance/> testimonials</h1>
              <div className="row my-4">
 <div className="col-md-4">
     <div className="parts mt-2">
@@ -46,7 +48,7 @@ const Home = () => {
 
 
              {/* services */}
-             <h1 className="services-title text-center">Services Available</h1>
+             <h1 className="services-title text-center"> <FcAdvance/> Services Available</h1>
              <div>
                  <div className="row ">
                      {

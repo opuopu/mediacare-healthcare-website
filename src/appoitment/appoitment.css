@@ -29,3 +29,20 @@
 .appoitment-main{
     margin-top: 72px;
 }
+/* last */
+.appoitment-last{
+    background-color: #4474ae;
+    padding: 8px 0;
+    margin-bottom: 40px;
+
+}
+.ap-title{
+    color: white;
+    font-weight: 700;
+
+    font-size: 50px;
+
+}
+.ap-desc{
+    color: rgba(255, 255, 255, 0.801);
+}

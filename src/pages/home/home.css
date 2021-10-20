@@ -6,6 +6,17 @@
     color: white;
     /* padding: 5px 10px; */
 }
+/* testtimonials */
+.testimonials-title {
+    color: #3e97b9;
+    font-weight: 700;
+    margin-top: 10px;
+    padding-bottom: 4px;
+    border-bottom: 3px solid  #3e97b9;
+    width: 40%;
+    margin: 0 auto;
+    margin-top: 20px;
+}
 .parts > button {
     background: none;
     color: white;

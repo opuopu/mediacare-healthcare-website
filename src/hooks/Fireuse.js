@@ -4,7 +4,7 @@ import { useHistory, useLocation } from "react-router";
 import initialize from "../config/Init";
 initialize()
 const Fireuse = () =>{
-   
+//    state
     const [user,setuser] = useState({})
     const [loading,setloading] = useState(true)
     const[name,setname] = useState('')
@@ -15,6 +15,7 @@ const Fireuse = () =>{
     // console.log(user);
     const provider = new GoogleAuthProvider();
     const auth = getAuth()
+    // google sign in
     const googlesign = () =>{
       setloading(true)
 return signInWithPopup(auth,provider)
@@ -60,7 +61,7 @@ return signInWithPopup(auth,provider)
     
         let passvalid =  /^(?=.*[0-9])(?=.*[!@#$%^&*])[a-zA-Z0-9!@#$%^&*]{7,15}$/;
         if(passvalid.test(password)){
-        createUserWithEmailAndPassword(auth,email,password)
+    createUserWithEmailAndPassword(auth,email,password)
         .then(result=>{
             const user =result.user
             setuser(user)

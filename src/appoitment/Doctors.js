@@ -14,7 +14,7 @@ const Doctors = (props) => {
         <h5 className="card-title my-2">{name}</h5>
         <p className="card-text text-dark my-2">{spe}</p>
       </div>
-      <Link to ="/appoitment"  style={{ textDecoration: 'none' }}>
+      <Link to ={`/appoitment/${name}`}  style={{ textDecoration: 'none' }}>
              <button className="my-3  d-block mx-auto appoit-btn "> <i className="far fa-calendar-check"></i> Appoitment now</button>
              </Link>
     </div>

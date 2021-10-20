@@ -6,25 +6,34 @@ import React, { useState } from 'react';
 import Useauth from '../../context/useauth';
 import { Link } from 'react-router-dom';
 import { Container } from 'react-bootstrap';
+import {useLocation,useHistory } from 'react-router-dom'
 import './register.css'
 
 const Register = () => {
-    // const[email,setemail] = useState('')
-    // const [password,setpassword] = useState('')
-    // const[name,setName] = useState('')
-    const {user,googlesign,createuser,error,setname,setemail,setpassword} = Useauth()
+    const location = useLocation()
+    const history = useHistory()
+    const redirect_url = location.state?.from || '/home'
+
+  
+ 
+    const {user,googlesign,createuser,error,setname,setemail,setpassword,setuser,seterror,username,} = Useauth()
     console.log(user);
  
+
+    // redirect
+  
+
+    
     const handleemail = (e) =>{
         setemail(e.target.value)
     }
     const handlepassword = (e) =>{
         setpassword(e.target.value)
-        console.log(e.target.value);
+        
     }
     const handlename = (e) =>{
 setname(e.target.value)
-console.log(e.target.value);
+
     }
 
        
@@ -40,7 +49,7 @@ console.log(e.target.value);
             <input type="email" name="" id="" placeholder="enter your email" onBlur={handleemail} required />
                 <br /> <br /> 
 <input type="password" placeholder="enter your password" onBlur={handlepassword}  required />     <br />  <br />
-<input type="submit" className="login-register-btn" onClick={()=> createuser()} value="register now" />
+<input type="submit" className="login-register-btn" onClick={createuser} value="register now" />
 <p className="text-dark">{error}</p>
 
 {/*   

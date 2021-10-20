@@ -14,6 +14,8 @@ import Register from './pages/register/register';
 import Privateroute from './pages/Login/privateroute/Privateroute';
 import Details from './pages/details/Details';
 import Notfound from './pages/notfound/Notfound';
+import appoitmentBook from './pages/appoitment-booking/appoitmentBook';
+import AppoitmentBook from './pages/appoitment-booking/appoitmentBook';
 
 
 
@@ -48,7 +50,9 @@ function App() {
   <Route exact path="/appoitment">
 <Appoitment></Appoitment>
   </Route>
- 
+ <Privateroute path="/appoitment/:doctor">
+<AppoitmentBook></AppoitmentBook>
+ </Privateroute>
    <Privateroute path="/service/:id">
 <Details></Details>
    </Privateroute>
