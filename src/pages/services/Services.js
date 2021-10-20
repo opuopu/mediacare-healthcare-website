@@ -19,7 +19,7 @@ const Services = () => {
                 <Container>
 <div className="d-flex align-items-center justify-content-around flex-column flex-lg-row">
     <div>
-        <h1 className="text-white fw-bold my-4">Our all services</h1>
+        <h1 className="text-white fw-bold">Our all services</h1>
         <p className="mt-2">hello sir mem. here is our all services. to read more please click on the button read more. thank you</p>
         <Link to="/appoitment">
                              <button className="enroll-btn fw-bold"> go to appoitment</button>
@@ -32,7 +32,7 @@ const Services = () => {
                 </Container>
             </div>
             <Container>
-            <h1 className="services-title text-center"> Services Available</h1>
+            <h1 className="services-title text-center my-5"> Services Available</h1>
                 <div className="row">
                     {
                         services?.map(ser => <Service key={ser.id} service ={ser}></Service>)
