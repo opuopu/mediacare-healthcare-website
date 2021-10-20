@@ -49,7 +49,7 @@ setname(e.target.value)
                 <br /> <br /> 
 <input type="password" placeholder="enter your password" onBlur={handlepassword}  required />     <br />  <br />
 <input type="submit" className="login-register-btn" onClick={createuser} value="register now" />
-<p className="text-dark">{error}</p>
+<p className="text-danger">{error}</p>
 
 
         

@@ -65,7 +65,7 @@ return signInWithPopup(auth,provider)
         .then(result=>{
             const user =result.user
             setuser(user)
-            seterror('sign up successfull please login')
+            seterror('sign up successfulll')
             username()
            
         })
@@ -77,7 +77,7 @@ return signInWithPopup(auth,provider)
       
     }
     else{
-        seterror('password must be at least 8 chr.up,low and symbol')
+        seterror('password must be at least 8 chr,upper $ lower  and symbol')
         // setloading(true)
     }
     }
