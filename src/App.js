@@ -45,22 +45,22 @@ function App() {
   <Route exact path="/about">
 <About></About>
   </Route>
-  <Route path="/login">
+  <Route exact path="/login">
 <Login></Login>
   </Route>
   <Route exact path="/appoitment">
 <Appoitment></Appoitment>
   </Route>
-  <Route path="/service">
+  <Route exact path="/service">
 <Services></Services>
   </Route>
-  <Privateroute path="/about/:id">
+  <Privateroute exact  path="/about/:id">
 <Details></Details>
   </Privateroute>
- <Privateroute path="/appoitment/:doctor">
+ <Privateroute  exact path="/appoitment/:doctor">
 <AppoitmentBook></AppoitmentBook>
  </Privateroute>
-   <Privateroute path="/service/:id">
+   <Privateroute exact  path="/service/:id">
 <Details></Details>
    </Privateroute>
 {/* <Route path="/service/:id">
