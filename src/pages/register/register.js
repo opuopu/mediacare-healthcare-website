@@ -16,7 +16,7 @@ const Register = () => {
   
  
     const {user,googlesign,createuser,error,setname,setemail,setpassword,setuser,seterror,username,FcGoogle} = Useauth()
-    console.log(user);
+    
  
 
     // redirect

@@ -52,7 +52,7 @@ const Home = () => {
              <div>
                  <div className="row ">
                      {
-                         services?.map(service =><Sopmeservice service={service} key={service.id}/>)
+                         services.slice(0,6)?.map(service =><Sopmeservice service={service} key={service.id}/>)
                      }
                  </div>
              </div>

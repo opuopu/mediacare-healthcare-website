@@ -36,5 +36,23 @@
         "id":"6",
         "name":"MENTAL HEALTH",
         "desc":"we have good doctors for that reason. Need help dealing with a drug addiction in Bangladesh? Anatta Recovery provides confidential."
+    },
+    {
+        "img":"https://i.postimg.cc/x10BK36S/medicin.png",
+        "id":"7",
+        "name":"MEDICINE",
+        "desc":" medicare educates patients in the field of clinical lipidology. We aim to translate scientific & medical progress into effective evidence-based guidance."
+    },
+    {
+        "img":"https://i.postimg.cc/KjxCJ7mL/gesto.png",
+        "id":"8",
+        "name":" GASTRONTEROLOGY",
+        "desc":"Gastroenterologist services · Description. A gastroenterologist is a physician who treats diseases and conditions related to the digestive system"
+    },
+    {
+        "img":"https://i.postimg.cc/52zd92KX/skin.png",
+        "id":"9",
+        "name":"SKIN",
+        "desc":" Welcome to Skin Specialists. We provide general skin care, surgical, pediatric, and laser surgery services for the treatment of diseases"
     }
 ]

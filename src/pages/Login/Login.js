@@ -15,7 +15,7 @@ const Login = () => {
     const redirect_url = location.state?.from || '/home'
     const redirecturl = location.state?.from || '/home'
     const {user,googlesign,setemail,setpassword,seterror,setuser,setloading,email,password,auth} = Useauth()
-    console.log(user);
+ 
  
 
     // redirect

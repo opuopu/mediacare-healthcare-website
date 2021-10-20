@@ -16,6 +16,7 @@ import Details from './pages/details/Details';
 import Notfound from './pages/notfound/Notfound';
 import appoitmentBook from './pages/appoitment-booking/appoitmentBook';
 import AppoitmentBook from './pages/appoitment-booking/appoitmentBook';
+import Services from './pages/services/Services';
 
 
 
@@ -50,6 +51,12 @@ function App() {
   <Route exact path="/appoitment">
 <Appoitment></Appoitment>
   </Route>
+  <Route path="/service">
+<Services></Services>
+  </Route>
+  <Privateroute path="/about/:id">
+<Details></Details>
+  </Privateroute>
  <Privateroute path="/appoitment/:doctor">
 <AppoitmentBook></AppoitmentBook>
  </Privateroute>

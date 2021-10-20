@@ -17,11 +17,16 @@ const Header = () => {
     <Navbar.Collapse id="responsive-navbar-nav">
     <Nav className="ms-auto">
       <Nav.Link  as={Link} to="/home">Home</Nav.Link>
+      <Nav.Link  as={Link} to="/service">service</Nav.Link>
       <Nav.Link as={Link} to="/about">about</Nav.Link>
       <Nav.Link as={Link} to="/appoitment">apppoitment</Nav.Link>
       { user?.email?  <Nav.Link className="fw-bold text-white" onClick={logout}>logout</Nav.Link>:<Nav.Link as={Link} to="/login">login</Nav.Link> }
+      {
+        user?.displayName?   <p className="mt-2">as: <span className="fw-bold"> {user.displayName}</span></p> :
+        <p className="mt-2">as: <span className="fw-bold"> {user.email}</span></p>
+      }
      
-        <p className="mt-2">signed in as: <span className="fw-bold"> {user.displayName}</span></p>
+       
     
     
     </Nav>
