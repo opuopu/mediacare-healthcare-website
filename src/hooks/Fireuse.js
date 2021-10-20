@@ -48,27 +48,32 @@ return signInWithPopup(auth,provider)
     },[])
     // displayname
 
-    const username = () =>{
+    // const username = () =>{
     
-        updateProfile(auth.currentUser,{
-            displayName:name
-        })
-        .then(result=>{})
+    //     updateProfile(auth.currentUser,{
+    //         displayName:name
+    //     })
+    //     .then(result=>{})
         
-    }
+    // }
     // create user using email and password
     const createuser = () =>{
     
         let passvalid =  /^(?=.*[0-9])(?=.*[!@#$%^&*])[a-zA-Z0-9!@#$%^&*]{7,15}$/;
         if(passvalid.test(password)){
- createUserWithEmailAndPassword(auth,email,password)
-        .then(result=>{
-            const user =result.user
-            setuser(user)
-            seterror('sign up successfulll')
-            username()
+return createUserWithEmailAndPassword(auth,email,password)
+        // .then(result=>{
+        //     const user =result.user
+        //     setuser(user)
+        //     seterror('sign up successfulll')
+            
+        // updateProfile(auth.currentUser,{
+        //     displayName:name
+        // })
+        // .then(result=>{})
+          
            
-        })
+        // })
         .catch(error=>{
             seterror(error.message)
         })
@@ -103,6 +108,6 @@ seterror("an error")
     }
 
    
-    return {user,googlesign,logout,loading,createuser,error,auth,email,password,setname,setemail,setuser,setpassword,seterror,setloading,emainAndPassSign,username}
+    return {user,googlesign,logout,loading,createuser,error,auth,email,password,setname,setemail,setuser,setpassword,seterror,setloading,emainAndPassSign,updateProfile,name}
 }
 export default Fireuse

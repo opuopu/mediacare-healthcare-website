@@ -13,15 +13,30 @@ import {useLocation,useHistory } from 'react-router-dom'
 
 const Register = () => {
    const history = useHistory()
+   const location = useLocation()
 
-  
+  const redirect_url = location?.state?.from || '/home'
  
-    const {user,googlesign,createuser,error,setname,setemail,setpassword,setuser,seterror,username,FcGoogle} = Useauth()
+    const {user,googlesign,auth,updateProfile,createuser,error,setname,setemail,setpassword,setuser,seterror,username,FcGoogle,name} = Useauth()
     
  
 
     // redirect 
-    
+    const Register = () =>{
+        createuser()
+          .then(result=>{
+            const user =result.user
+            setuser(user)
+            history.push(redirect_url)
+            seterror('sign up successfulll')
+        updateProfile(auth.currentUser,{
+            displayName:name
+        })
+        .then(result=>{})
+          
+           
+        })
+    }
 
     
     const handleemail = (e) =>{
@@ -52,7 +67,7 @@ setname(e.target.value)
             <input type="email" name="" id="" placeholder="enter your email" onBlur={handleemail} required />
                 <br /> <br /> 
 <input type="password" placeholder="enter your password" onBlur={handlepassword}  required />     <br />  <br />
-<input type="submit" className="login-register-btn" onClick={createuser} value="register now" />
+<input type="submit" className="login-register-btn" onClick={Register} value="register now" />
 <p className="text-danger">{error}</p>
 
 
