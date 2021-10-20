@@ -1,27 +1,26 @@
 import loginimg from '../../image/login.jpg'
 
 
+import { IconName,FcGoogle } from "react-icons/fc";
 
 import React, { useState } from 'react';
 import Useauth from '../../context/useauth';
 import { Link } from 'react-router-dom';
 import { Container } from 'react-bootstrap';
-import {useLocation,useHistory } from 'react-router-dom'
+
 import './register.css'
 
 const Register = () => {
-    const location = useLocation()
-    const history = useHistory()
-    const redirect_url = location.state?.from || '/home'
+   
 
   
  
-    const {user,googlesign,createuser,error,setname,setemail,setpassword,setuser,seterror,username,} = Useauth()
+    const {user,googlesign,createuser,error,setname,setemail,setpassword,setuser,seterror,username,FcGoogle} = Useauth()
     console.log(user);
  
 
     // redirect
-  
+    
 
     
     const handleemail = (e) =>{
@@ -52,9 +51,8 @@ setname(e.target.value)
 <input type="submit" className="login-register-btn" onClick={createuser} value="register now" />
 <p className="text-dark">{error}</p>
 
-{/*   
-            <button onClick={googlesignin}>google</button> */}
-            {/* <button onClick={googlesign}>google</button> */}
+
+        
           <Link to="/login" style={{ textDecoration: 'none', color: 'white' }} >  <p className="text-info fw-bold mt-2">already registered?log in now</p></Link>
                
             </div>
